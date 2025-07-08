@@ -1,0 +1,80 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+  }
+}
+
+/* Comprehensive Next.js UI hiding */
+/* Hide Next.js development toolbar and indicators */
+#__next-build-indicator,
+[data-nextjs-build-indicator],
+[data-nextjs-toast],
+[data-nextjs-dialog-overlay],
+[data-nextjs-dialog],
+[data-nextjs-toast-container],
+[data-nextjs-toast-root] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Hide Next.js logo and branding elements */
+[data-nextjs-logo],
+[data-nextjs-branding],
+[data-nextjs-watermark],
+[data-nextjs-indicator] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Hide any floating Next.js elements */
+[data-nextjs-float],
+[data-nextjs-popup],
+[data-nextjs-modal],
+[data-nextjs-overlay] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Hide Next.js development mode indicators */
+[data-nextjs-dev],
+[data-nextjs-development],
+[data-nextjs-debug] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Additional selectors for Next.js 15+ */
+[data-nextjs-version],
+[data-nextjs-build],
+[data-nextjs-status] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Hide any elements with Next.js related classes */
+.nextjs-indicator,
+.nextjs-logo,
+.nextjs-branding,
+.nextjs-watermark,
+.nextjs-toolbar,
+.nextjs-debug,
+.nextjs-dev {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
