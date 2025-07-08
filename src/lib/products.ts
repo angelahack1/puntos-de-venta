@@ -53,3 +53,6 @@ export async function getProducts(): Promise<Producto[]> {
 
   return products as Producto[];
 }
+
+// Force fresh data fetch - disable caching
+export const revalidate = 0;
