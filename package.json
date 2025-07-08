@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:export": "next build && next export",
     "lint": "next lint",
-    "start": "npx serve@latest out -p 31000",
+    "start": "next start -p 31000",
     "clean_windows": "(if exist node_modules rd /s /q node_modules) && (if exist .next rd /s /q .next) && (if exist out rd /s /q out) && (if exist package-lock.json del package-lock.json)",
     "clean_linux": "rm -rf node_modules .next out && rm -f package-lock.json"
   },
