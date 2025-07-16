@@ -57,7 +57,7 @@ export default function ProductList({ initialProducts }: ProductListProps) {
           <button
             onClick={fetchProducts}
             disabled={loading}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50"
+            className="fixed bottom-4 right-4 p-3 rounded-full bg-gray-800 text-white shadow-lg dark:bg-gray-200 dark:text-gray-800"
           >
             {loading ? 'Refreshing...' : 'Refresh'}
           </button>
